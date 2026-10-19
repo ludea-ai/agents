@@ -22,7 +22,7 @@ is only a copy of these files, installed with `/install-agents`.
 ## Files
 ```
 agents/<id>.json          what runs: title, schedule, repos (+ access), procedure, prompt file
-agents/<id>.prompt.md     the exact prompt the scheduled task sends (never edited in claude.ai)
+agents/<id>.prompt.md     the agent's full instructions — the scheduled task only holds a stub that runs this file
 procedures/               what each agent does, step by step (+ the child-safety reviewer's brief)
 status/<id>.json          heartbeats: last finished run of each agent (written by the agents)
 deployed.json             IDs of the sessions + scheduled tasks installed right now (by /install-agents)
@@ -32,8 +32,10 @@ DEPANNAGE.md              runbook for the owner, in French: symptoms → cause �
 ```
 
 ## Rules
-- **This repo is the source of truth.** Change an agent = edit its files here, commit, then
-  `/install-agents`. Never edit a scheduled task's prompt in claude.ai by hand.
+- **This repo is the source of truth.** A scheduled task only holds a stub (`tools/agents.cjs stub`)
+  that pulls this repo and runs `agents/<id>.prompt.md`. Change what an agent does = edit its files
+  here, commit, push — the next run uses it. `/install-agents` is only for what lives on claude.ai
+  (a session or task missing or broken, a new agent, a new hour).
 - **Public repo, no secrets**: no token, password or personal data — ever. IDs of sessions and
   scheduled tasks are not secrets.
 - **The owner decides**: agents propose; nothing is merged or published without the owner's explicit
@@ -49,6 +51,8 @@ DEPANNAGE.md              runbook for the owner, in French: symptoms → cause �
 ## Known pitfalls
 - A scheduled task that **creates a new session on each fire** starts without the repos and without
   the GitHub tools: it stops in 30 s (night of 2026-10-19). Always a standing session + a bound task.
+- A scheduled task's prompt can only be edited from inside the session it posts into — hence the
+  stub that never changes.
 - In a Claude Code session, GitHub's GraphQL is blocked (`gh pr list`, `gh label list` fail): use the
   GitHub MCP tools or `gh api repos/…` (REST). Creating a repository is not allowed from a session
   (403): the owner creates it on github.com.

@@ -25,9 +25,10 @@ les consignes, les procédures et l'historique des passages sont dans ce dépôt
 
 ## Je veux changer ce que fait un agent ou son heure
 Demande-le dans une session sur `ludea-ai/agents`. Le changement est fait dans les fichiers
-(`agents/…`, `procedures/…`), enregistré, puis appliqué avec `/install-agents`.
-Ne modifie jamais les consignes directement dans claude.ai : elles seraient écrasées à la prochaine
-installation, et le dépôt ne refléterait plus la réalité.
+(`agents/…`, `procedures/…`) et enregistré : le prochain passage l'utilise tout seul, car la tâche
+programmée ne contient qu'un petit texte qui va lire ses consignes dans le dépôt. Pour changer une
+heure, `/install-agents` s'en charge.
+Ne modifie jamais les consignes directement dans claude.ai : le dépôt ne refléterait plus la réalité.
 
 ## Où répondre aux agents
 - **« OK »** pour une mise à jour du moteur : dans la session « Ludea – agent moteur (signalements) ».
