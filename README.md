@@ -43,8 +43,8 @@ DEPANNAGE.md              runbook for the owner, in French: symptoms → cause �
   owner in French.
 - Procedures are Ludea's only: they are not in the engine template, so they never reach a creator's
   game. Creators' tools (`/publish`, `/idea`, `/update`, report-upstream) live in the engine.
-- **Scope**: Encrine (the owner's other project) is separate — never look at, check or change its repos
-  from Ludea. The two main sessions talk instead (`send_message`, Encrine main session
+- **Scope**: Encrine (the owner's other project) is separate — never change its repos and never read
+  its sessions from Ludea; READING its public repos is allowed (owner decision, 2026-10-19), both ways. The two main sessions talk instead (`send_message`, Encrine main session
   `session_01Uxi6vTyZY4CiKFDutfBqKC`): either side can send a short note ("here is what we did, it
   might help you": what, why, where) **or ask a question** ("how did you do X?"); the side asked
   answers with what it did and what it can share. Each side decides with the owner whether to reuse
