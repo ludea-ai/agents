@@ -1,0 +1,15 @@
+{
+  "id": "catalogue",
+  "title": "Ludea – agent catalogue (publications)",
+  "schedule": "CRON_TZ=Europe/Paris 55 5 * * *",
+  "procedure": "procedures/catalogue/review-submission.md",
+  "workdir": "ludea-ai.github.io",
+  "repos": [
+    { "repo": "ludea-ai/agents", "access": "push" },
+    { "repo": "ludea-ai/ludea-ai.github.io", "access": "push" },
+    { "repo": "ludea-ai/game-engine", "access": "push" }
+  ],
+  "reposNote": "plus, at acceptance time, the new fork in ludea-ai (add_repo push); submitted repos are cloned read-only from their public URL",
+  "permissionMode": "auto",
+  "prompt": "agents/catalogue.prompt.md"
+}

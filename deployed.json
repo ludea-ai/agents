@@ -1,0 +1,10 @@
+{
+  "_note": "What is installed right now on the owner's claude.ai account. Written by /install-agents — never edited by hand. IDs are not secrets.",
+  "installedAt": "2026-10-19T06:20:23Z",
+  "installedBy": "Encrine session (manual repair), before this repo existed",
+  "agents": {
+    "engine": { "session": "session_01BTzUTRvDvuuPA9XsRMckBq", "trigger": "trig_01VehpckD5gx2S7hdmuyVgSR", "promptVersion": "pre-repo" },
+    "catalogue": { "session": "session_015aXmvnkGGPPVWMh3t2FLkD", "trigger": "trig_01UYyfxGnQcQMSYYQ2c1oXqE", "promptVersion": "pre-repo" },
+    "watchdog": null
+  }
+}

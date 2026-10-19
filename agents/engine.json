@@ -1,0 +1,19 @@
+{
+  "id": "engine",
+  "title": "Ludea – agent moteur (signalements)",
+  "schedule": "CRON_TZ=Europe/Paris 55 3 * * *",
+  "procedure": "procedures/engine/triage-upstream.md",
+  "workdir": "game-engine",
+  "repos": [
+    { "repo": "ludea-ai/agents", "access": "push" },
+    { "repo": "ludea-ai/game-engine", "access": "push" },
+    { "repo": "ludea-ai/nebula", "access": "push" },
+    { "repo": "ludea-ai/ludea-ai.github.io", "access": "read" },
+    { "repo": "ludea-ai/dr-smile", "access": "push" },
+    { "repo": "ludea-ai/gta7", "access": "push" },
+    { "repo": "ludea-ai/my-little-stable", "access": "push" }
+  ],
+  "reposNote": "plus every catalogue game whose repo is in ludea-ai (catalogue.json), added at run time with add_repo",
+  "permissionMode": "auto",
+  "prompt": "agents/engine.prompt.md"
+}

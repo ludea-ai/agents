@@ -1,0 +1,12 @@
+{
+  "id": "watchdog",
+  "title": "Ludea – surveillance des agents",
+  "schedule": "CRON_TZ=Europe/Paris 10 7 * * *",
+  "procedure": "procedures/watchdog/check-agents.md",
+  "workdir": "agents",
+  "repos": [
+    { "repo": "ludea-ai/agents", "access": "push" }
+  ],
+  "permissionMode": "auto",
+  "prompt": "agents/watchdog.prompt.md"
+}
