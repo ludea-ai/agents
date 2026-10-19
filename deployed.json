@@ -1,10 +1,13 @@
 {
   "_note": "What is installed right now on the owner's claude.ai account. Written by /install-agents — never edited by hand. IDs are not secrets.",
-  "installedAt": "2026-10-19T06:20:23Z",
-  "installedBy": "Encrine session (manual repair), before this repo existed",
+  "installedAt": "2026-10-19T08:03:01Z",
+  "installedBy": "install-agents (session_01HX2WcaNAyQAMQhCjEMqYua)",
   "agents": {
-    "engine": { "session": "session_01BTzUTRvDvuuPA9XsRMckBq", "trigger": "trig_01VehpckD5gx2S7hdmuyVgSR", "promptVersion": "pre-repo" },
-    "catalogue": { "session": "session_015aXmvnkGGPPVWMh3t2FLkD", "trigger": "trig_01UYyfxGnQcQMSYYQ2c1oXqE", "promptVersion": "pre-repo" },
-    "watchdog": null
-  }
+    "engine": { "session": "session_01BTzUTRvDvuuPA9XsRMckBq", "trigger": "trig_01VehpckD5gx2S7hdmuyVgSR", "prompt": "pre-repo (full prompt in the task; replaced by the stub once game-engine#14 is merged)" },
+    "catalogue": { "session": "session_011FSGjNbt2Cya1kUXmsFkgD", "trigger": "trig_012uSBTATGPQrKBdfPM5wXJY", "prompt": "stub" },
+    "watchdog": { "session": "session_019DH7qGsafeBXFxXPrkDoVW", "trigger": "trig_01HYipmR5RanTSDHAK9PeBMZ", "prompt": "stub" }
+  },
+  "replaced": [
+    { "agent": "catalogue", "session": "session_015aXmvnkGGPPVWMh3t2FLkD", "trigger": "trig_01UYyfxGnQcQMSYYQ2c1oXqE", "state": "trigger disabled 2026-10-19; session renamed « ANCIENNE session »" }
+  ]
 }
