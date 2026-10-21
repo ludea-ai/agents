@@ -1,8 +1,8 @@
 {
   "agent": "engine",
-  "date": "2026-10-20",
-  "finishedAt": "2026-10-20T08:28:03Z",
+  "date": "2026-10-21",
+  "finishedAt": "2026-10-21T02:20:32Z",
   "result": "ok",
-  "summary": "Owner OK: game-engine#21 merged and propagated (engine 2026-10-20.1) to nebula v66, dr-smile v57, gta7 v27, my-little-stable v24; issues #17-#20 closed; #22 filed (intermittent WebKit tour check)",
-  "waitingForOwner": []
+  "summary": "2 issues (#22, #23) triaged as accepted; batch PR game-engine#24 (engine 2026-10-21.1) opened, tested on the Nebula bench (WebKit tour 5/5) and the starter",
+  "waitingForOwner": [ "OK to merge game-engine#24 and propagate it to Nebula, Dr Smile, GTA 7 and Mon Centre Equestre" ]
 }
