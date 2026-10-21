@@ -24,13 +24,13 @@
       "agent": "catalogue",
       "session": "session_015aXmvnkGGPPVWMh3t2FLkD",
       "trigger": "trig_01UYyfxGnQcQMSYYQ2c1oXqE",
-      "state": "trigger disabled 2026-10-19; session renamed « ANCIENNE session »"
+      "state": "trigger and old session deleted 2026-10-21 (owner request)"
     },
     {
       "agent": "engine",
       "session": "session_01BTzUTRvDvuuPA9XsRMckBq",
       "trigger": "trig_01VehpckD5gx2S7hdmuyVgSR",
-      "state": "trigger disabled 2026-10-19; session renamed « ANCIENNE session »"
+      "state": "trigger and old session deleted 2026-10-21 (owner request)"
     }
   ]
 }
