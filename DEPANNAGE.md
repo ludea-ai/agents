@@ -18,6 +18,13 @@ s'il y a un problème.
 3. Elle te dit si un dépôt est refusé à un agent. Dans ce cas, il faut autoriser ce dépôt dans les
    réglages GitHub de Claude ; la commande te donne le lien.
 
+## Une mise à jour du moteur est restée à moitié (« mise à jour en retard »)
+Après ton OK, l'agent moteur met à jour les jeux en journée. S'il s'est arrêté en route, certains jeux
+ont encore l'ancien moteur. L'agent moteur reprend tout seul la nuit suivante ; si c'est encore en
+retard le matin, la surveillance te prévient (quels jeux, quelle modification).
+1. Dans la session « Ludea – agent moteur (signalements) », écris : « termine la mise à jour du moteur ».
+2. Il te dit ce qui bloquait (souvent un test rouge sur un jeu) et ce qu'il a fait.
+
 ## J'ai tout perdu (sessions supprimées, compte changé…)
 Même chose : une session sur `ludea-ai/agents`, puis **`/install-agents`**. Elle recrée les trois
 sessions et les trois tâches programmées à partir des fichiers. Rien d'autre n'est à reconstituer :

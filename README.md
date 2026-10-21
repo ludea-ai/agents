@@ -8,7 +8,7 @@ is only a copy of these files, installed with `/install-agents`.
 | --- | --- | --- | --- |
 | **engine** | 03:55 | Engine inbox (issues on `ludea-ai/game-engine`) → one batch PR on `game-engine`, tried on the Nebula test bench → the owner's « OK » → merge → propagation to Nebula and every Ludea game | [`procedures/engine/triage-upstream.md`](procedures/engine/triage-upstream.md) |
 | **catalogue** | 05:55 | Publication requests on `ludea-ai/ludea-ai.github.io` → review (child safety first) → the owner's « publie <jeu> » → reviewed copy served at `https://ludea.ai/<game>/` | [`procedures/catalogue/review-submission.md`](procedures/catalogue/review-submission.md) |
-| **watchdog** | 07:10 | Did both agents really run last night? Silent if yes; otherwise one automatic re-run and a notification to the owner | [`procedures/watchdog/check-agents.md`](procedures/watchdog/check-agents.md) |
+| **watchdog** | 07:10 | Did both agents really run last night, and was every engine update the owner OK'd carried to all the games? Silent if yes; otherwise one automatic re-run (nightly runs only) and a notification to the owner | [`procedures/watchdog/check-agents.md`](procedures/watchdog/check-agents.md) |
 
 ## How it works
 - **One standing session per agent** on claude.ai, created from this repo (`create_session`), plus a

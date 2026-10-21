@@ -213,3 +213,10 @@ Write `status/engine.json` in your clone of `ludea-ai/agents` —
 `{ "agent": "engine", "date": "<YYYY-MM-DD Paris>", "finishedAt": "<ISO UTC>", "result": "ok" | "nothing-new" | "blocked" | "error", "summary": "<one English line>", "waitingForOwner": [ "<what>", … ] }`
 — commit `Engine agent run <date>: <result>` and push to `main`. The watchdog reads it at 07:10
 (Paris): no heartbeat for today = the owner is warned.
+
+**Also after a daytime phase A** (the owner's OK answered in this session): when the propagation
+ends — finished OR stopped — rewrite the heartbeat (same `date` field = today): `result` `ok` when
+every target is updated and live, else `blocked` with the targets left and why; `summary` with the
+build numbers; `waitingForOwner` emptied of the OK it asked for (keep what still needs the owner).
+Commit `Engine agent: game-engine#<pr> merged and propagated` (or `… propagation blocked`) and push.
+A merged batch without the `propagated` label is also checked by the watchdog the next morning.
