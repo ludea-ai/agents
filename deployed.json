@@ -1,6 +1,6 @@
 {
   "_note": "What is installed right now on the owner's claude.ai account. Written by /install-agents — never edited by hand. IDs are not secrets.",
-  "installedAt": "2026-10-19T08:22:43Z",
+  "installedAt": "2026-10-22T06:44:47Z",
   "installedBy": "install-agents (session_01HX2WcaNAyQAMQhCjEMqYua)",
   "agents": {
     "engine": {
@@ -14,9 +14,10 @@
       "prompt": "stub"
     },
     "watchdog": {
-      "session": "session_019DH7qGsafeBXFxXPrkDoVW",
-      "trigger": "trig_01HYipmR5RanTSDHAK9PeBMZ",
-      "prompt": "stub"
+      "session": "session_01LLWX6Mn3ceP23JWq1AxXct",
+      "trigger": "trig_014EtCVLHkuF2fLRCbgp9FCK",
+      "prompt": "stub",
+      "promptVersion": "015fd69"
     }
   },
   "replaced": [
@@ -31,6 +32,12 @@
       "session": "session_01BTzUTRvDvuuPA9XsRMckBq",
       "trigger": "trig_01VehpckD5gx2S7hdmuyVgSR",
       "state": "trigger and old session deleted 2026-10-21 (owner request)"
+    },
+    {
+      "agent": "watchdog",
+      "session": "session_019DH7qGsafeBXFxXPrkDoVW",
+      "trigger": "trig_01HYipmR5RanTSDHAK9PeBMZ",
+      "state": "trigger and session deleted 2026-10-22: the session had given itself push access to ludea-ai/game-engine; the watchdog only needs public reads"
     }
   ]
 }
