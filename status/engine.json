@@ -1,8 +1,8 @@
 {
   "agent": "engine",
-  "date": "2026-10-22",
-  "finishedAt": "2026-10-22T02:12:16Z",
-  "result": "nothing-new",
-  "summary": "No new issue; no open batch PR; #22 re-checked on Nebula WebKit (10/10 passes), kept open as a watch",
-  "waitingForOwner": []
+  "date": "2026-10-23",
+  "finishedAt": "2026-10-23T02:31:38Z",
+  "result": "ok",
+  "summary": "No new issue; #22 remaining case caught (tap landed on the creature card) and fixed in batch PR game-engine#25 (engine 2026-10-23.1, test-only), bench WebKit 6/6",
+  "waitingForOwner": [ "OK to merge game-engine#25 and propagate it to Nebula, Dr Smile, GTA 7 and Mon Centre Equestre" ]
 }
