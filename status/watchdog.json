@@ -1,8 +1,8 @@
 {
   "agent": "watchdog",
-  "date": "2026-10-23",
-  "checkedAt": "2026-10-23T05:12:01Z",
-  "engine": "ok",
+  "date": "2026-10-24",
+  "checkedAt": "2026-10-24T05:11:36Z",
+  "engine": "nothing-new",
   "catalogue": "nothing-new",
   "propagation": "ok",
   "reruns": [],
