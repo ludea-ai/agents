@@ -1,8 +1,8 @@
 {
   "agent": "engine",
-  "date": "2026-10-24",
-  "finishedAt": "2026-10-24T01:56:26Z",
-  "result": "nothing-new",
-  "summary": "No new issue; batch PR game-engine#25 (engine 2026-10-23.1, test-only) still waiting for the owner's OK",
-  "waitingForOwner": [ "OK to merge game-engine#25 and propagate it to Nebula, Dr Smile, GTA 7 and Mon Centre Equestre" ]
+  "date": "2026-10-25",
+  "finishedAt": "2026-10-25T07:14:23Z",
+  "result": "ok",
+  "summary": "Owner OK: game-engine#25 merged and propagated (engine 2026-10-23.1) to nebula v68, dr-smile v59, gta7 v29, my-little-stable v26 (run interrupted by a worker restart, resumed); #22 closed; sync bug found during propagation filed as #26, fix PR game-engine#27 opened",
+  "waitingForOwner": [ "OK to merge game-engine#27 and propagate it to Nebula, Dr Smile, GTA 7 and Mon Centre Equestre" ]
 }
