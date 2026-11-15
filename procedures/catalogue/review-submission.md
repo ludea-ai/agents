@@ -60,6 +60,19 @@ A new version posted on it (`/publish` comment with a new commit) removes the ho
    on the issue for a comment by the creator confirming it (EN + FR, one sentence); when the creator is
    the owner, they can also confirm in the run's session. No consent = no publication, whatever the
    review says. A removal request by the creator later → unpublish (§4) within the next run.
+   **Consent at EVERY publication** (owner decision 2026-11-15, common rule of the Manufacture
+   platforms): the creator agrees again for each version Ludea publishes — first publication,
+   update, new version on an open request — never "already agreed last time". The consent sentence
+   is for THAT version and names: the commit, the credit as it will be shown, the licence of that
+   version (as the repo declares it — `LICENSE` / `meta.license`; none declared → say "no licence
+   declared" and flag it to the owner, never pick one yourself), and what changed since the last
+   published version ("first publication" if none). Ask for it on the issue (EN + FR, one sentence)
+   when the request's own consent box does not carry those points; a consent given for an earlier
+   commit does not count for the new one. **Games made by the owner** (repo in `ludea-ai`, or the
+   owner is the creator) are credited under the platform's name: « by Ludea » / « par Ludea » —
+   on the card, in `catalogue.json` and in CONTRIBUTORS.md; the consent sentence says so.
+   Open with the owner, not decided: the default licence, and whether Ludea fixes a licence for
+   the game itself — until decided, take the licence the creator declares and change nothing.
 6. Catalogue fields: title, EN + FR description, age, modes/tags, icon, a 390×844 screenshot,
    and the **author** (`meta.author`: name as credited, GitHub login, link, contributors) — check
    it against the repo's own GitHub data (`gh api repos/<repo>` owner, `/contributors`, commit
@@ -169,6 +182,8 @@ repo already in `catalogue.json` — is an update. Same steps as §1–2, with:
 - **Review**: the full automatic checks on the new commit (publish-check, tours, network) AND a
   focused child-safety review of **what changed** since `reviewedCommit` (every changed/added text
   and image, new screens), done by a fresh reviewer agent; the rest of the game was already approved.
+- **Consent again** for this version (§1.5: commit, credit, licence, what changed since
+  `reviewedCommit`) — no publication of the update without it.
 - **Verdict + owner's OK**: « Réponds "publie la mise à jour de <jeu>" ici » (or `/accept` on the issue).
 - **Apply** on our copy (never on the creator's repo): take the game content of the new commit,
   then re-apply the latest Ludea engine (`sync-engine.sh https://github.com/ludea-ai/game-engine.git
