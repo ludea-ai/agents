@@ -1,8 +1,8 @@
 {
  "agent": "catalogue",
- "date": "2026-11-16",
- "finishedAt": "2026-11-16T04:55:59Z",
+ "date": "2026-11-17",
+ "finishedAt": "2026-11-17T04:55:47Z",
  "result": "nothing-new",
- "summary": "No new publication or update request; ludea-ai.github.io#1 (Poulpy) stays on hold, no new version posted. Procedure now asks consent at every publication (b8918da).",
+ "summary": "No new publication or update request; ludea-ai.github.io#1 (Poulpy) stays on hold, no new version posted.",
  "waitingForOwner": ["Default licence for catalogue games, and whether Ludea fixes one (open since 2026-11-15)"]
 }
