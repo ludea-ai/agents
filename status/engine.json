@@ -1,8 +1,8 @@
 {
   "agent": "engine",
-  "date": "2026-11-20",
-  "finishedAt": "2026-11-20T02:56:18Z",
+  "date": "2026-11-23",
+  "finishedAt": "2026-11-23T02:56:13Z",
   "result": "nothing-new",
-  "summary": "Inbox empty, no open batch PR, every merged batch propagated",
+  "summary": "Inbox empty, no open batch PR, every merged batch propagated. The 2026-11-21 and 2026-11-22 runs did not happen (session down); their triggers arrived together this night and this run covers them.",
   "waitingForOwner": []
 }
